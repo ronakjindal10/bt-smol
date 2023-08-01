@@ -1,0 +1,30 @@
+.contact-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.contact-item .contact-name {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.contact-item .karma {
+    width: 50px;
+    text-align: center;
+}
+
+.contact-item .bt-button {
+    width: 50px;
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-item .bt-button:hover {
+    background-color: #45a049;
+}
