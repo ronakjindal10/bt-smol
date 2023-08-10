@@ -1,47 +1,44 @@
 Shared Dependencies:
 
-1. **React**: Used in frontend files for creating UI components.
+1. Environment Variables: GOOGLE_CLIENT_ID, DATABASE_URL in .env file.
 
-2. **Node.js**: Used in backend files for server-side scripting.
+2. Data Schemas: User and Contact schemas in User.js and Contact.js respectively.
 
-3. **PostgreSQL**: Used in backend files for database management.
+3. Exported Variables: 
+   - In authService.js: signInWithGoogle
+   - In contactService.js: getContacts, increaseKarma
+   - In googlePeopleService.js: getGoogleContacts
+   - In dbService.js: connectDb
+   - In authController.js: googleAuth
+   - In contactController.js: getContacts, increaseContactKarma
+   - In authRoutes.js: router
+   - In contactRoutes.js: router
 
-4. **Google People API**: Used in both frontend and backend files for fetching contacts.
+4. DOM Element IDs: 
+   - In SignIn.js: 'google-signin-btn'
+   - In ContactList.js: 'contact-list'
+   - In ContactItem.js: 'bt-btn'
 
-5. **Google Client ID**: Used in both frontend and backend files for Google Sign In.
+5. Message Names: 
+   - In SignIn.js: 'Google Sign In'
+   - In ContactList.js: 'Contact List'
+   - In ContactItem.js: 'Increase Karma'
 
-6. **Vercel Deployment**: Used in README.md files for deployment instructions.
+6. Function Names: 
+   - In App.js: render
+   - In SignIn.js: signInWithGoogle
+   - In ContactList.js: getContacts, sortContacts
+   - In ContactItem.js: increaseKarma
+   - In authService.js: signInWithGoogle
+   - In contactService.js: getContacts, increaseKarma
+   - In server.js: startServer
+   - In authRoutes.js: googleAuthRoute
+   - In contactRoutes.js: getContactsRoute, increaseKarmaRoute
+   - In authController.js: googleAuth
+   - In contactController.js: getContacts, increaseContactKarma
+   - In googlePeopleService.js: getGoogleContacts
+   - In dbService.js: connectDb
+   - In dbConfig.js: getDbConfig
 
-7. **User Schema**: Used in User.js and authController.js for user data structure.
-
-8. **Contact Schema**: Used in Contact.js and contactController.js for contact data structure.
-
-9. **AuthService**: Used in authService.js and SignIn.js for handling authentication.
-
-10. **ContactService**: Used in contactService.js, ContactList.js, and ContactItem.js for handling contact data.
-
-11. **GooglePeopleService**: Used in googlePeopleService.js and authController.js for fetching contacts from Google.
-
-12. **KarmaService**: Used in karmaService.js, contactController.js, and KarmaButton.js for managing karma.
-
-13. **SignIn Component**: Used in SignIn.js and App.js for user sign in.
-
-14. **ContactList Component**: Used in ContactList.js and App.js for displaying contact list.
-
-15. **ContactItem Component**: Used in ContactItem.js and ContactList.js for displaying individual contact.
-
-16. **KarmaButton Component**: Used in KarmaButton.js and ContactItem.js for increasing karma.
-
-17. **AuthRoutes**: Used in authRoutes.js and index.js for routing authentication requests.
-
-18. **ContactRoutes**: Used in contactRoutes.js and index.js for routing contact-related requests.
-
-19. **DB Config**: Used in db.js and index.js for database configuration.
-
-20. **GoogleAuth Config**: Used in googleAuth.js and authController.js for Google authentication configuration.
-
-21. **DOM Element IDs**: 'signInButton', 'contactList', 'contactItem', 'karmaButton' used in various frontend files for DOM manipulation.
-
-22. **Message Names**: 'SIGN_IN_SUCCESS', 'FETCH_CONTACTS_SUCCESS', 'UPDATE_KARMA_SUCCESS' used in frontend and backend files for communication between client and server.
-
-23. **Function Names**: 'signIn', 'fetchContacts', 'updateKarma' used in various frontend and backend files for functionality.
+7. Package Dependencies: 
+   - In package.json (root, frontend, backend): react, react-dom, react-scripts, express, cors, dotenv, pg, google-auth-library, axios, nodemon (devDependency).
